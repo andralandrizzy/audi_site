@@ -1,0 +1,329 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 14px;
+	background: #fff;
+}
+
+.container {
+	width: 92%;
+	margin: auto;
+}
+
+/* global style */
+
+img {
+	width: 100%;
+	min-height: 100%;
+}
+
+.title {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 15px;
+}
+
+.text {
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+
+.btn_1 {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	width: 150px;
+	padding: 15px 30px;
+	background: #000;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 1em;
+}
+
+.btn_1:hover {
+	background: rgb(242, 11, 11);
+	color: #000;
+}
+
+.btn_2 {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	width: 130px;
+	padding: 10px 20px;
+	border: rgb(140, 137, 137) solid 2px;
+	border-radius: 3px;
+	font-size: 1em;
+	margin-top: 15px;
+	color: #000;
+}
+
+.btn_2:hover {
+	color: #fff;
+	background: #000;
+}
+
+/* end of global style */
+
+#showcase .image_wrapper {
+	width: 95%;
+	margin: auto;
+}
+
+#showcase img {
+	width: 100%;
+	height: 60vh;
+	object-fit: cover;
+	object-position: center;
+}
+
+.top_nav {
+	width: 100%;
+	display: flex;
+	/* border: salmon solid 2px; */
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.left_nav,
+.right_nav {
+	flex: 3;
+}
+
+.logo {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	font-size: 1.2em;
+}
+
+.lg_clr {
+	color: rgb(242, 11, 11);
+}
+
+.left_nav ul,
+.right_nav ul,
+#cta .cars_list,
+#slider .slider_wrapper,
+.footer_content {
+	display: flex;
+}
+
+.right_nav ul {
+	justify-content: flex-end;
+}
+
+.left_nav ul {
+	justify-content: flex-start;
+}
+
+.left_nav li,
+.right_nav li,
+.logo {
+	list-style: none;
+	padding: 10px 15px;
+}
+
+.left_nav a,
+.right_nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: .9em;
+	color: #000;
+}
+
+.left_nav a:hover,
+.right_nav a:hover {
+	color: rgb(242, 11, 31);
+}
+
+#cta {
+	text-align: center;
+}
+
+.cta_info {
+	width: 60%;
+	margin: auto;
+	padding: 60px 0px;
+}
+
+#cta .cars_list {
+	align-items: center;
+}
+
+#cta .cars_content {
+	list-style: none;
+	cursor: pointer;
+}
+
+#cta .cars img {
+	width: 70%;
+}
+
+#cta .cars p {
+	margin-top: 15px;
+	font-size: .9em;
+	text-transform: uppercase;
+}
+
+#slider {
+	background: #eff0f2;
+	margin-top: 60px;
+}
+
+#slider .slider_wrapper {
+	width: 85%;
+	margin: auto;
+	padding: 60px 0;
+}
+
+#slider .image_content,
+#main_footer .form {
+	flex: 2;
+}
+
+#slider .text_content {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+	padding: 50px;
+}
+
+#slider .text_content .subtitle {
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	margin-bottom: 30px;
+}
+
+#slider .text_content .title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+
+#slider .text_content .paragraph {
+	margin-bottom: 30px;
+	line-height: 1.6;
+}
+
+#services {
+	margin-top: 70px;
+}
+
+#services .service_content {
+	display: flex;
+	text-align: center;
+}
+
+#services .service_info {
+	margin-right: 10px;
+	padding: 30px;
+}
+
+#services .service_title {
+	font-size: 1.4em;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+#services .service_desc {
+	font-size: 1em;
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+/* footer style */
+
+#main_footer {
+	margin-top: 50px;
+	background: #eff0f2;
+	padding: 100px 10px;
+}
+
+#main_footer .collections,
+#main_footer .brand {
+	flex: 1;
+}
+
+.footer_content {
+	margin: auto;
+}
+
+.footer_content li {
+	list-style: none;
+	padding: 15px;
+	margin-left: 30px;
+}
+
+.footer_content a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: rgb(73, 72, 72);
+}
+
+.bar {
+	border-right: solid rgb(190, 187, 187) 1px;
+	padding-right: 50px;
+}
+
+.form {
+	padding-left: 30px;
+	margin: auto;
+}
+
+.form input[type=text],
+.form textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgb(140, 137, 137);
+	border-radius: 4px;
+	resize: vertical;
+	background: #eff0f2;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+.form .title {
+	color: rgb(140, 137, 137);
+	letter-spacing: 0px;
+	font-size: 1.5em;
+}
+
+.form .btn_2 {
+	float: right;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
